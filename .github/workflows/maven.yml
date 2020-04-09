@@ -16,7 +16,7 @@ jobs:
       - uses: actions/cache@v1
         with:
           path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-build-${{ hashFiles("**/pom.xml") }}
+          key: ${{ runner.os }}-maven-build-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-build-
       - run: mvn -B package
@@ -38,7 +38,7 @@ jobs:
       - uses: actions/cache@v1
         with:
           path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-deploy-${{ hashFiles("**/pom.xml") }}
+          key: ${{ runner.os }}-maven-deploy-${{ hashFiles('**/pom.xml') }}
           restore-keys: |
             ${{ runner.os }}-maven-deploy-
       - run: mvn -B -DaltDeploymentRepository=mvn-repo::default::file://mvn-repo deploy
