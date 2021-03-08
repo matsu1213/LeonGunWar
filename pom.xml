@@ -101,7 +101,8 @@
       <groupId>com.shampaggon</groupId>
       <artifactId>CrackShot</artifactId>
       <version>0.98.9</version>
-      <scope>provided</scope>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/CrackShot.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -113,13 +114,15 @@
       <groupId>net.azisaba</groupId>
       <artifactId>PlayerSettings</artifactId>
       <version>1.0.0</version>
-      <scope>provided</scope>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/PlayerSettings.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>net.azisaba</groupId>
       <artifactId>KDStatusReloaded</artifactId>
-      <version>1.2.0</version>
-      <scope>provided</scope>
+      <version>1.2.1</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/KDStatusReloaded.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>net.ess3</groupId>
