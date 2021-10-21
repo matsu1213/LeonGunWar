@@ -1,12 +1,28 @@
-## Welcome to GitHub Pages
+## やりたいことメモ
 
-You can use the [editor on GitHub](https://github.com/matsu1213/LeonGunWar/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+やりたいことをここにメモしていきます。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### ダメージ補正の導入
 
-### Markdown
+ダメージ補正をゲームの中に取り入れます。これによってバランス調整をします。逆に崩壊するかもしれないので、テストプレイをたくさんやる予定です。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### ダメージ補正の概要
+
+#### 連続ダメージ補正
+
+連続ダメージ補正は、連続してプレイヤーがダメージを受けたときに、ダメージを減算します。
+
+基本的には24F、つまり8tick、0.4秒いないにダメージが入った場合に補正がかかるようにします。
+
+どのぐらい補正をかけるかは、武器の種類によって変わります。基本的には 1/2 ～ 2/3 ぐらいを本来のダメージに乗算します。
+
+#### ヒット後無敵
+
+ヒット後無敵は、主にプレイヤーが大きなダメージを受けたときに、1～2秒程度そのプレイヤーにダメージが入らなくなります。
+
+#### ヒット後技無敵
+
+ヒット後技無敵は、
 
 ```markdown
 Syntax highlighted code block
